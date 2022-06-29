@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    justify-items: center;
+}
+p {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    height: 1px;
+    width: 240px;
+}
+.screen {
+    direction: rtl;    
+}
+.calculator {
+    margin: auto;
+    width: 240px;
+    margin-top: 40px;
+    height: 300px;
+}
+button {
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+}
+button:hover {
+    background-color: rgba(189, 189, 189, 0.755);
+}
+.screen {
+    display: flex;
+    background-color: black;
+    width: 240px;
+    height: 60px;
+    color: white;
+    align-items: flex-end;
+}
+.keys-1 {
+    display: flex;
+}
+.keys-2 {
+    display: flex;
+}
+.keys-3 {
+    display: flex;
+}
+.keys-4 {
+    display: flex;
+}
+.zero {
+    width: 120px;
+    margin: 0px;
+}
+.divide, .multiply, .minus, .addition, .equal {
+    background-color: #df974c;
+    color: white;
+}
+.divide:hover,.multiply:hover,.minus:hover,.addition:hover,.equal:hover {
+    background-color: #dc9325e7;
+    color: white;
+}
+.divide, .eight, .five, .two, .multiply, .minus,.addition,.equal {
+    border-left: 2px solid black;
+}
+.clear-btn {
+    width: 120px;
+    border: 1px solid rgb(19, 91, 174);
+}
