@@ -71,16 +71,17 @@ function handleMath(value){
 
 
 function flushOperation(floatBuffer) {
-    if(previousOperator === "+"){
+    if (previousOperator === "+") {
         runningTotal += floatBuffer;
-    }else if(previousOperator === "-"){
+    } else if (previousOperator === "-") {
         runningTotal -= floatBuffer;
-    }else if(previousOperator === "÷"){
-        runningTotal /= floatBuffer;
-    }else if(previousOperator === "×"){
+    } else if (previousOperator === "÷") {
+        runningTotal = Math.round((runningTotal / floatBuffer) * 100) / 100; // Round to two decimal places
+    } else if (previousOperator === "×") {
         runningTotal *= floatBuffer;
     }
 }
+
 
 function rerender() {
     screen.innerText = buffer; 
